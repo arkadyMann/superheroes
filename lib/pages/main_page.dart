@@ -7,7 +7,7 @@ import 'package:superheroes/resources/superheroes_colors.dart';
 import 'package:superheroes/resources/superheroes_images.dart';
 import 'package:superheroes/widgets/action_button.dart';
 import 'package:superheroes/widgets/info_with_button.dart';
-import 'package:superheroes/widgets/superheroe_card.dart';
+import 'package:superheroes/widgets/superhero_card.dart';
 
 class MainPage extends StatefulWidget {
   MainPage({Key? key}) : super(key: key);
