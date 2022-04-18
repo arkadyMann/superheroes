@@ -227,7 +227,7 @@ class NoFavoritesWidget extends StatelessWidget {
         subtitle: "Search and add",
         buttonText: "Search",
           assetImage: SuperheroesImages.hulk,
-          imageHeight: 112,
+          imageHeight: 119,
           imageWidth: 84,
           imageTopPadding: 9,
       )
