@@ -130,7 +130,7 @@ class SearchResultWidget extends StatelessWidget {
             name: "Batman",
             realName: "Bruce Wayne",
             imageUrl:
-                "http://www.superherodb.com/pictures2/portraits/10/100/639.jpg",
+                "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg",
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -149,7 +149,7 @@ class SearchResultWidget extends StatelessWidget {
             name: "Venom",
             realName: "Eddie Brock",
             imageUrl:
-                "http://www.superherodb.com/pictures2/portraits/10/100/22.jpg",
+                "https://www.superherodb.com/pictures2/portraits/10/100/22.jpg",
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -195,7 +195,7 @@ class FavoritesWidget extends StatelessWidget {
             name: "Batman",
             realName: "Bruce Wayne",
             imageUrl:
-                "http://www.superherodb.com/pictures2/portraits/10/100/639.jpg",
+                "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg",
             onTap: () {},
           ),
         ),
@@ -208,7 +208,7 @@ class FavoritesWidget extends StatelessWidget {
             name: "Ironman",
             realName: "Tony Stark",
             imageUrl:
-                "http://www.superherodb.com/pictures2/portraits/10/100/85.jpg",
+                "https://www.superherodb.com/pictures2/portraits/10/100/85.jpg",
             onTap: () {},
           ),
         ),
@@ -229,7 +229,7 @@ class NoFavoritesWidget extends StatelessWidget {
           assetImage: SuperheroesImages.hulk,
           imageHeight: 112,
           imageWidth: 84,
-          imageTopPadding: 16,
+          imageTopPadding: 9,
       )
     );
   }
