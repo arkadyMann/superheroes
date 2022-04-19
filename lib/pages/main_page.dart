@@ -226,7 +226,7 @@ class NoFavoritesWidget extends StatelessWidget {
       buttonText: "Search",
       assetImage: SuperheroesImages.ironman,
       imageHeight: 119,
-      imageWidth: 84,
+      imageWidth: 108,
       imageTopPadding: 9,
     ));
   }
