@@ -34,7 +34,7 @@ class InfoWithButton extends StatelessWidget {
           children: [
             Container(
               height: 108,
-              width: 84,
+              width: 108,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: SuperheroesColors.blue,
