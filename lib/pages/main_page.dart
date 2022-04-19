@@ -241,7 +241,7 @@ class NothingFoundWidget extends StatelessWidget {
       subtitle: "Search for something else",
       buttonText: "Search",
       assetImage: SuperheroesImages.hulk,
-      imageHeight: 119,
+      imageHeight: 112,
       imageWidth: 108,
       imageTopPadding: 9,
     ));
