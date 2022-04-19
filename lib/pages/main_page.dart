@@ -81,7 +81,6 @@ class MainPageWidget extends StatelessWidget {
             return FavoritesWidget();
           case MainPageState.searchResults:
             return SearchResultWidget();
-          case MainPageState.loading:
           case MainPageState.nothingFound:
             return NothingFoundWidget();
           case MainPageState.loadingError:
@@ -131,13 +130,7 @@ class SearchResultWidget extends StatelessWidget {
             realName: "Bruce Wayne",
             imageUrl:
                 "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg",
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => SuperheroPage(name: "Batman"),
-                ),
-              );
-            },
+            onTap: () {},
           ),
         ),
         const SizedBox(
@@ -150,13 +143,7 @@ class SearchResultWidget extends StatelessWidget {
             realName: "Eddie Brock",
             imageUrl:
                 "https://www.superherodb.com/pictures2/portraits/10/100/22.jpg",
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => SuperheroPage(name: "Venom"),
-                ),
-              );
-            },
+            onTap: () {},
           ),
         ),
       ],
@@ -196,7 +183,13 @@ class FavoritesWidget extends StatelessWidget {
             realName: "Bruce Wayne",
             imageUrl:
                 "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg",
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => SuperheroPage(name: "Batman"),
+                ),
+              );
+            },
           ),
         ),
         const SizedBox(
@@ -209,7 +202,13 @@ class FavoritesWidget extends StatelessWidget {
             realName: "Tony Stark",
             imageUrl:
                 "https://www.superherodb.com/pictures2/portraits/10/100/85.jpg",
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => SuperheroPage(name: "Ironman"),
+                ),
+              );
+            },
           ),
         ),
       ],
@@ -218,57 +217,50 @@ class FavoritesWidget extends StatelessWidget {
 }
 
 class NoFavoritesWidget extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: InfoWithButton(
-        title: "No favorites yet",
-        subtitle: "Search and add",
-        buttonText: "Search",
-          assetImage: SuperheroesImages.hulk,
-          imageHeight: 119,
-          imageWidth: 84,
-          imageTopPadding: 9,
-      )
-    );
+        child: InfoWithButton(
+      title: "No favorites yet",
+      subtitle: "Search and add",
+      buttonText: "Search",
+      assetImage: SuperheroesImages.ironman,
+      imageHeight: 119,
+      imageWidth: 108,
+      imageTopPadding: 9,
+    ));
   }
 }
 
 class NothingFoundWidget extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Center(
         child: InfoWithButton(
-          title: "Nothing found",
-          subtitle: "Search for something else",
-          buttonText: "Search",
-          assetImage: SuperheroesImages.ironman,
-          imageHeight: 119,
-          imageWidth: 108,
-          imageTopPadding: 9,
-        )
-    );
+      title: "Nothing found",
+      subtitle: "Search for something else",
+      buttonText: "Search",
+      assetImage: SuperheroesImages.hulk,
+      imageHeight: 119,
+      imageWidth: 108,
+      imageTopPadding: 9,
+    ));
   }
 }
 
-
 class LoadingErrorWidget extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Center(
         child: InfoWithButton(
-          title: "Error happened",
-          subtitle: "Please, try again",
-          buttonText: "Retry",
-          assetImage: SuperheroesImages.superman,
-          imageHeight: 106,
-          imageWidth: 126,
-          imageTopPadding: 22,
-        )
-    );
+      title: "Error happened",
+      subtitle: "Please, try again",
+      buttonText: "Retry",
+      assetImage: SuperheroesImages.superman,
+      imageHeight: 106,
+      imageWidth: 126,
+      imageTopPadding: 22,
+    ));
   }
 }
 
